@@ -8,10 +8,29 @@ single-file executables published here via Git LFS — download, run, no install
 |---|---|---|
 | **AI & Dev Space Analyzer** | [`AIDevSpaceAnalyzer.exe`](https://github.com/aojha111/ReleasedApps/raw/main/AIDevSpaceAnalyzer.exe) | Finds AI-model, agent and dev-environment folders eating your disk (Hugging Face, Ollama, npm/uv/pip caches, `node_modules`, venvs…) and clears them safely to the Recycle Bin. Windows 11 Fluent UI, light/dark theme, scan history, exclusions. |
 | **GitProfile** | [`GitProfile.exe`](https://github.com/aojha111/ReleasedApps/raw/main/GitProfile.exe) | Stops GitHub's "Select an account" popup on every push. Pick which of your signed-in GitHub accounts is the default, and pin a different one per repository. Window, tray shortcut and CLI in one exe. |
+| **Image Compressor** | [`ImageCompressor.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ImageCompressor.exe) | Batch-compresses images to JPG/PNG/WEBP/ICO by quality or exact target file size, with optional resize, named presets, folder import, before/after diff preview and retry-failed. Windows 11 Fluent UI with Mica, light/dark themes. |
 | **Screen Lock Active** | [`ScreenLockActive.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ScreenLockActive.exe) | Keeps all displays awake while blocking physical keyboard/mouse input until an unlock chord — automation (screenshots, injected input) still works. Optional panel/monitor power-off mode and a Silent screen-on mode. |
 | **Screen Lock Active (installer)** | [`ScreenLockActiveInstaller.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ScreenLockActiveInstaller.exe) | Installer build of Screen Lock Active. |
 
 ## Releases
+
+### Image Compressor — v1.2 (2026-09-23)
+
+Source: [aojha111/ImageCompressor](https://github.com/aojha111/ImageCompressor)
+
+- Windows 11 Fluent UI: real Mica backdrop, immersive dark/light title bar, rounded corners,
+  Segoe Fluent glyph icons, compact layout, light/dark toggle with system-theme detection
+- Batch compression by quality slider or exact target file size (binary search with resize
+  fallback), outputs JPG, PNG, WEBP or ICO with collision-safe naming
+- Named presets (quality/format/resize combos) saved to a dropdown, plus custom output folder
+  and optional longest-side resize
+- Recursive folder import via drag-drop, Add folder button or Ctrl+Shift+O
+- Before/after diff preview with fit-to-view zoom and size/savings badges (double-click a
+  result row); image previews and context menus throughout
+- Results table with dimensions, savings, totals, per-file status chips and a Retry failed
+  action; keyboard shortcuts (Ctrl+O, Ctrl+L, Ctrl+T, Return, Delete)
+- Single-file exe, no install needed; Mica requires Windows 11 22H2+ (older Windows gets
+  the same UI without the backdrop)
 
 ### GitProfile — v1.0 (2026-09-23)
 
