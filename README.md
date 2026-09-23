@@ -87,6 +87,17 @@ Source: [aojha111/GitProfileSelector](https://github.com/aojha111/GitProfileSele
 - Shows the exact `git config` commands before running them — nothing changes silently
 - Requires Git for Windows with Git Credential Manager; no .NET install needed
 
+### AI & Dev Space Analyzer — v2.1 (2026-09-23)
+
+- New: project-folder deep analysis — sees through each project and reports the junk
+  inside it (previously projects were one opaque "keep" row)
+- Clear-safe agent caches: `.kilo`, `.freebuff`, `.aider*`, `.specstory`, `.ai-history`,
+  `.codeindex`, plus nested `node_modules`, `__pycache__`, `.next`, `build`/`dist` and venvs
+- Review-flagged agent data that may hold hand-written rules: `.claude`, `.cursor`,
+  `.qoder`, `.roo`, `.kiro`, `.factory`, `.augment`, `.devin`, `.agent(s)`
+- Never touched: `.git`, `.github`, `.vscode`, `.idea` — active-project safety unchanged
+- Depth-limited secondary scan (3 levels) keeps scans fast; each junk folder counted once
+
 ### AI & Dev Space Analyzer — v2.0 (2026-09-22)
 
 - Windows 11 Fluent UI: NavigationView shell (Home / Results / History / Exclusions / Settings), Segoe Fluent Icons, system accent color
