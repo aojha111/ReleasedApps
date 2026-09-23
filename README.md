@@ -14,6 +14,13 @@ single-file executables published here via Git LFS — download, run, no install
 
 ## Releases
 
+### Image Compressor — v1.2.1 (2026-09-23)
+
+Source: [aojha111/ImageCompressor](https://github.com/aojha111/ImageCompressor)
+
+- Fixed: selecting any preset in the dropdown crashed the app (signal type mismatch —
+  `QComboBox.activated` delivers an index, the handler expected the preset name)
+
 ### GitProfile — v1.1 (2026-09-23)
 
 Source: [aojha111/GitProfileSelector](https://github.com/aojha111/GitProfileSelector)
