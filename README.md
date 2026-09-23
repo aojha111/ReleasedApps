@@ -16,6 +16,14 @@ single-file executables published here via Git LFS — download, run, no install
 
 ## Releases
 
+### VMDesk — v1.0.1 (2026-09-23)
+
+Source: [aojha111/VMDesk](https://github.com/aojha111/VMDesk)
+
+- Fixed: connecting to a VM crashed with "A 'DynamicResourceExtension' cannot be set on
+  the 'BasedOn' property" — the session window's connection-bar button styles now base on
+  the shared button styles statically (theming still follows light/dark switches)
+
 ### VMDesk — v1.0.0 (2026-09-23)
 
 Source: [aojha111/VMDesk](https://github.com/aojha111/VMDesk)
