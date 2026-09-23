@@ -11,8 +11,24 @@ single-file executables published here via Git LFS — download, run, no install
 | **Image Compressor** | [`ImageCompressor.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ImageCompressor.exe) | Batch-compresses images to JPG/PNG/WEBP/ICO by quality or exact target file size, with optional resize, named presets, folder import, before/after diff preview and retry-failed. Windows 11 Fluent UI with Mica, light/dark themes. |
 | **Screen Lock Active** | [`ScreenLockActive.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ScreenLockActive.exe) | Keeps all displays awake while blocking physical keyboard/mouse input until an unlock chord — automation (screenshots, injected input) still works. Optional panel/monitor power-off mode and a Silent screen-on mode. |
 | **Screen Lock Active (installer)** | [`ScreenLockActiveInstaller.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ScreenLockActiveInstaller.exe) | Installer build of Screen Lock Active. |
+| **VMDesk** | [`VMDesk.exe`](https://github.com/aojha111/ReleasedApps/raw/main/VMDesk.exe) | Offline-first VM and Remote Desktop connection manager: tile/list library with search and favorites, native Microsoft RDP sessions embedded or in standalone windows, passwords kept only in Windows Credential Manager, import/export and backups. Windows 11 Fluent UI, light/dark themes. |
 
 ## Releases
+
+### VMDesk — v1.0.0 (2026-09-23)
+
+Source: [aojha111/VMDesk](https://github.com/aojha111/VMDesk)
+
+- VM and remote-connection library: tile and list views (persisted per setting), search,
+  favorites, per-VM groups, and full CRUD with stored credentials
+- Native Microsoft RDP sessions (`mstscax.dll`) hosted in the embedded workspace or in an
+  independent standalone session window, per VM
+- Credentials live only in Windows Credential Manager — never in the SQLite database,
+  exports, or logs; connecting without a credential opens a picker of saved ones
+- Import/export (password-free), timestamped database backups, diagnostics and rotating logs
+- Windows 11 Fluent UI: Mica-style surfaces, light/dark/system themes, Fluent icon pack,
+  PerMonitorV2 DPI awareness
+- Requires Windows 10/11 x64; passwords are kept on-device, no accounts or network services
 
 ### Image Compressor — v1.2.2 (2026-09-23)
 
