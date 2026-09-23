@@ -12,6 +12,7 @@ single-file executables published here via Git LFS — download, run, no install
 | **Screen Lock Active** | [`ScreenLockActive.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ScreenLockActive.exe) | Keeps all displays awake while blocking physical keyboard/mouse input until an unlock chord — automation (screenshots, injected input) still works. Optional panel/monitor power-off mode and a Silent screen-on mode. |
 | **Screen Lock Active (installer)** | [`ScreenLockActiveInstaller.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ScreenLockActiveInstaller.exe) | Installer build of Screen Lock Active. |
 | **VMDesk** | [`VMDesk.exe`](https://github.com/aojha111/ReleasedApps/raw/main/VMDesk.exe) | Offline-first VM and Remote Desktop connection manager: tile/list library with search and favorites, native Microsoft RDP sessions embedded or in standalone windows, passwords kept only in Windows Credential Manager, import/export and backups. Windows 11 Fluent UI, light/dark themes. |
+| **VMDesk (installer)** | [`VMDeskInstaller.exe`](https://github.com/aojha111/ReleasedApps/raw/main/VMDeskInstaller.exe) | Installer build of VMDesk — extracts the app to `%LOCALAPPDATA%\VMDesk` and creates Start Menu and desktop shortcuts. |
 
 ## Releases
 
