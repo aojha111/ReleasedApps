@@ -14,6 +14,13 @@ single-file executables published here via Git LFS — download, run, no install
 
 ## Releases
 
+### Image Compressor — v1.2.2 (2026-09-23)
+
+Source: [aojha111/ImageCompressor](https://github.com/aojha111/ImageCompressor)
+
+- Clear now also wipes the output records: results table, per-file bars, totals, status
+  chips and the failed list (Retry can no longer act on cleared files)
+
 ### Image Compressor — v1.2.1 (2026-09-23)
 
 Source: [aojha111/ImageCompressor](https://github.com/aojha111/ImageCompressor)
