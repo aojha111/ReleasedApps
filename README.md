@@ -16,6 +16,19 @@ single-file executables published here via Git LFS — download, run, no install
 
 ## Releases
 
+### VMDesk — v1.0.2 (2026-09-27)
+
+Source: [aojha111/VMDesk](https://github.com/aojha111/VMDesk)
+
+- Fixed: connecting never actually dialed — the RDP ActiveX control was configured before
+  it had a window handle, so the OCW was never realized; the control is now created first,
+  parented into the session window, and configured at dial time
+- Fixed: silent connect failures — a failed dial now surfaces an in-app error with the real
+  reason instead of hanging or falling back to standalone mstsc
+- Hardened: each mstscax coclass is pre-validated with a real CoCreateInstance before use,
+  and a control is never created while unparented (which orphaned the HWND)
+- UI: refreshed themes to Windows 11 Fluent so controls match the rest of the OS
+
 ### VMDesk — v1.0.1 (2026-09-23)
 
 Source: [aojha111/VMDesk](https://github.com/aojha111/VMDesk)
