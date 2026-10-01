@@ -9,12 +9,22 @@ single-file executables published here via Git LFS — download, run, no install
 | **AI & Dev Space Analyzer** | [`AIDevSpaceAnalyzer.exe`](https://github.com/aojha111/ReleasedApps/raw/main/AIDevSpaceAnalyzer.exe) | Finds AI-model, agent and dev-environment folders eating your disk (Hugging Face, Ollama, npm/uv/pip caches, `node_modules`, venvs…) — including agent junk inside your own projects (`.kilo`, `.freebuff`, `.aider` caches clear-safe; `.claude`, `.cursor`, `.qoder` dirs flagged for review) — and clears them safely to the Recycle Bin. Windows 11 Fluent UI, light/dark theme, scan history, exclusions. |
 | **GitProfile** | [`GitProfile.exe`](https://github.com/aojha111/ReleasedApps/raw/main/GitProfile.exe) | Stops GitHub's "Select an account" popup on every push. Pick which of your signed-in GitHub accounts is the default, and pin a different one per repository. System/light/dark themes, window, tray shortcut and CLI in one exe. |
 | **Image Compressor** | [`ImageCompressor.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ImageCompressor.exe) | Batch-compresses images to JPG/PNG/WEBP/ICO by quality or exact target file size, with optional resize, named presets, folder import, before/after diff preview and retry-failed. Windows 11 Fluent UI with Mica, light/dark themes. |
-| **Screen Lock Active** | [`ScreenLockActive.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ScreenLockActive.exe) | Keeps all displays awake while blocking physical keyboard/mouse input until an unlock chord — automation (screenshots, injected input) still works. Optional panel/monitor power-off mode and a Silent screen-on mode. |
+| **Screen Lock Active** | [`ScreenLockActive.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ScreenLockActive.exe) | Keeps all displays awake while blocking physical keyboard/mouse input until an unlock chord — automation (screenshots, injected input) still works. Optional panel/monitor power-off mode and a Silent screen-on mode. Low-battery hibernate/sleep with smart detection of the machine's power state (hibernation-on/off, sleep-on/off). |
 | **Screen Lock Active (installer)** | [`ScreenLockActiveInstaller.exe`](https://github.com/aojha111/ReleasedApps/raw/main/ScreenLockActiveInstaller.exe) | Installer build of Screen Lock Active. |
 | **VMDesk** | [`VMDesk.exe`](https://github.com/aojha111/ReleasedApps/raw/main/VMDesk.exe) | Offline-first VM and Remote Desktop connection manager: tile/list library with search and favorites, native Microsoft RDP sessions embedded or in standalone windows, passwords kept only in Windows Credential Manager, import/export and backups. Windows 11 Fluent UI, light/dark themes. |
 | **VMDesk (installer)** | [`VMDeskInstaller.exe`](https://github.com/aojha111/ReleasedApps/raw/main/VMDeskInstaller.exe) | Installer build of VMDesk — extracts the app to `%LOCALAPPDATA%\VMDesk` and creates Start Menu and desktop shortcuts. |
 
 ## Releases
+
+### Screen Lock Active (2026-10-01)
+
+Source: [aojha111/ScreenLockActive](https://github.com/aojha111/ScreenLockActive)
+
+- Added: smart detection of whether Windows hibernation is actually enabled (`powercfg /h` state), not just
+  supported — with hibernation off the low-battery action now sleeps directly instead of attempting a doomed hibernate
+- UI: the "Hibernate/sleep at low battery" row shows the machine's power state — hibernation-on/off, sleep-on/off
+- Fixed: hibernation capability detection always reported "supported" (byte-array truthiness bug), so hibernate was
+  chosen even on machines without S4
 
 ### VMDesk — v1.0.2 (2026-09-27)
 
